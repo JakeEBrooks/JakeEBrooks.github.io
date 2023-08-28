@@ -1,0 +1,13 @@
+---
+layout: default
+title: "Preface"
+permalink: "/preface"
+nav_order: 1
+---
+
+# Preface
+Astronomers are capable programmers, and regularly create some of the most amazing software. Outside of radio astronomy, the subject of my PhD, results such as the millenium simulation are a clear testament to the skill of astronomers as software developers. One thing that most people do not know however, is that almost all astronomers are completely self-taught software developers. We start by writing scripts to do simple tasks, like calculating $x^2$ over a set of input $x$ values. Then, slowly, we challenge ourselves to build more complex programs using more advanced techniques, driven by our research goals. Many students studying Physics go through this same process, and recieve little to no guidance on the fundamentals of programming, let alone building efficient and scalable applications. I dread to think how much tax money is lost, how many labour hours are wasted, how much mental stress is caused, just because our Physics researchers recieve inadequate training in using the most useful tool ever to come into science: the computer.
+
+This guide will mostly be my attempt at guiding new students of science into the wonderful world of software development. I'll start by introducing some very fundamental concepts, more basic than what most 'guides' and 'tutorials' will offer. The concepts might seem alien and unconnected at first but I promise you in the long run, a good knowledge of these fundamentals will make everything a lot easier. We're not going to be diving into code right away; building understanding takes time, despite what a youtube video might tell you.
+
+Finally, as a disclaimer, I am far from an expert. I am an astronomer, not a full-time software developer. I am a PhD student, not an experienced teacher. My hope is that my fascination with computers, the education I recieved from a particularly excellent computer science high school teacher, followed by my training in physics and astronomy, allows me to approach the topic of programming from a very different place than most experienced software developers. What is written in the following sections will not address every pedantic detail, and there are often extreme cases that are left unaddressed for the sake of overall understanding. And lastly I may talk in generalisations, because to be 100% accurate would only introduce confusion.
