@@ -180,7 +180,9 @@ compress_html:
   comments: all
   endings: all
   startings: []
-  blanklines: false
+  blanklines: true
   profile: false
   # ignore:
   #   envs: all
+
+latex: MathJax
