@@ -6,7 +6,7 @@ parent: Fundamental Concepts
 nav_order: 1
 ---
 
-## Binary Numbers
+# Binary Numbers
 It is quite remarkable when you sit back and _really_ think about it. The only thing the computer in front of you needs to work is electricity, and yet our entire way of life is built on it. Every aspect of our daily lives only exists because the computer in front of you can work wonders with electricity. Our entire global economy, our governments, our schools and universities, our hospitals and care homes, our banks and shopping centres... I could go on. All of these only exist as they do because the computer in front of you can do some pretty amazing things with one simple thing: electricity. What, in all the world, must happen between the plug socket and the screen to allow this craziness?!
 
 To answer that question, we must start by understanding the machine in front of you. In my view, this fundamentally starts with binary numbers. I'm going to indulge myself in a bit of history here and there, since I think it can be quite useful to know where we come from, to understand where we are. I'll keep it brief when I do, but if history really isn't your thing I apologise in advance.
@@ -52,17 +52,17 @@ Now watch carefully here, because we're going to do a similar thing for the regu
 
 ... and so on. The quantity is communicated just as in the normal base-10 rulebook you've been using your whole life, but adding together the necessary powers of two instead. An explicit example:
 
-`13 = 1*2^3 + 1*2^2 + 0*2^1 + 1*2^0`
+$$13 = 1*2^3 + 1*2^2 + 0*2^1 + 1*2^0$$
 
 just like in the base-10 system you instinctively know:
 
-`13 = 1*10^1 + 3*10^0`
+$$13 = 1*10^1 + 3*10^0$$
 
 And that's binary numbers!
 
 Now you might've seen them written with leading zeros before, like `3 = 0011`. This doesn't have a mathematical meaning beyond what I've just shown above, but it does communicate something else. Before we get to that, let me explain why I've taught you to skillfully wave your arms around.
 
-## Representing information with binary numbers
+# Representing information with binary numbers
 As we know, computers run on electricity, but it's more accurate to say that computers run on carefully timed bursts of electricity. To make this concrete, imagine a scenario where I have stupidly agreed to be shocked by you, with the aim of you telling me how old you are, all without uttering a single word. We agree to use binary numbers, and every ten seconds I am either painfully electrocuted, or not. If, at the ten second mark, I am electrocuted I know that means you sent a binary `1`. If not, I know you just sent a binary `0`. Say you are thirty years old, and in binary `30 = 11110`. We have agreed to go from left to right in binary, so I am barbarically shocked four times in a row and then spared at the fiftieth second.
 
 Based on the rules we agreed to earlier, I know you just told me you are 30 years old! Fun! To expand on this idea, imagine that we then agree to assign binary numbers to all the letters in the alphabet. For example, we might say that `01100101 = e`. Now we can pass sadistic messages to one another by taking turns in the torture device and sending a sequence of letters back and forth.
@@ -75,10 +75,10 @@ The other reason relates to computer memory, and how binary numbers are stored i
 
 one __bit__ = __one digit binary number__ (like 0 or 1)\
 one __nibble__ = __four digit binary number__ (like 0011 or 1011, no I'm not joking)\
-one __byte__ = __eight digit binary number__ (like 11100010)\
+one __byte__ = __eight digit binary number__ (like 11100010)
 
-Say our computer has a maximum storage capacity of 100 gigabytes. One gigabyte means 1 billion bytes, which in turn means 8 billion bits. We have one hundred gigabytes, so we can store 800 billion binary digits in our computer! It's a literal translation: one-giga-byte(s) = one-billion-bitsx8
+Say our computer has a maximum storage capacity of 100 gigabytes. One gigabyte means 1 billion bytes, which in turn means 8 billion bits. We have one hundred gigabytes, so we can store 800 billion binary digits in our computer! It's a literal translation: "one" "giga" "byte(s)" = "one" "billion" "lots of 8 bits"
 
-Practically speaking, it's not unreasonable to think of a storage device, like a hard drive, as just a really big book. On each page you can only write a certain number of digits (bits) since each digit has a fixed width, so the overall book can only fit a certain amount of information.
+Practically speaking, it's not unreasonable to think of a storage device, like a hard drive, as just a really big book. On each page you can only write a certain number of digits (bits) since each digit has a fixed physical size when written on the page, so the overall book can only fit a certain number of bits, and therefore a finite amount of information.
 
-In the next section, we'll talk about the components of a computer and how storage devices fit into this structure. Take a break, and then [we'll get stuck in](./binary_logic)
+In the next section, we'll talk about the components of a computer and how storage devices fit into this structure. Take a break, and then [we'll get stuck in](./boolean_logic)

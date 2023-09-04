@@ -170,6 +170,8 @@ plugins:
   - jekyll-github-metadata
   - jekyll-include-cache
 
+markdown: kramdown
+highlighter: rouge
 kramdown:
   syntax_highlighter_opts:
     block:
@@ -185,4 +187,4 @@ compress_html:
   # ignore:
   #   envs: all
 
-latex: MathJax
+latex: mathjax
