@@ -137,7 +137,7 @@ x = 2
 and it will automatically know you're talking about some kind of integer. In C, it's slightly different because the C compiler wants to know exactly what datatype your variable is, so the same variable definition would be:
 
 ```c
-int x = 2
+int x = 2;
 ```
 
 The reason why there is a difference is actually quite important, but I'll defer that explanation to a later section.
