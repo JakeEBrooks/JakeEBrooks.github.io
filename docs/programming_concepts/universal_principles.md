@@ -7,10 +7,22 @@ nav_order: 2
 ---
 
 # Universal Principles
-There are some ideas that are common across all languages, so I thought I'd better go over these as they're often yet another thing that gets left out of introductory materials for programming. Again, they might seem simple, but having an explicit understanding can simplfy things in the long run. Where I can, I'll give concrete, intuitive, and simple examples using Python.
+There are some basic ideas that are common across all languages, so I thought I'd better go over these as they're often yet another thing that gets left out of introductory materials for programming. Again, they might seem simple, but having an explicit understanding can simplfy things in the long run. Where I can, I'll give concrete, intuitive, and simple examples using Python.
 
 ## How do you actually write programs?
-Most often in just a simple text document. You install the necessary software for the programming language you're using, point it at the text file you created, and the software will read through the file assuming it contains code written in the language it understands. For it to do this, the words and letters you type in the text file to make the program must follow a set of rules, collectively called the languages _syntax_.
+Most often in just a simple text document. You install the necessary software for the programming language you're using, point it at the text file you created, and the software will read through the file assuming it contains code written in the language it understands. For example, if you wanted to write a Python program, you would start by creating a text file called "hello_world.py", where ".py" file extension just means: *this is a text file containing things written using Python syntax*. So inside the text file might just be:
+
+```python
+print("Hello World!")
+```
+
+There's a number of ways to run the program, but the most basic way that you'll be using a lot early on is from the command line, by typing:
+
+`python hello_world.py`
+
+with the "hello_world.py" text file in your local directory. The Python software will then look in the text file and execute the code within, which will just show on the screen:
+
+> Hello World!
 
 ## Syntax
 You actually already understand what syntax is, even if you've never thought about it before. That is, assuming you speak a language, which I hope is the case since you're reading this in English (right?).
@@ -113,6 +125,23 @@ This means that all the restrictions we went through in the previous section on 
 
 *Ok we're done with this for now, take another break :)*
 
+## Variables
+If you're already familiar with algebra, variables should be very easy to get to grips with because they're almost exactly the same as algebraic numbers. Variables are how you communicate values to your program. Most languages require you to label your variables with data types so it knows roughly what it is going to be working with when performing operations.
+
+Python isn't one of these languages, so you can define variables quite simply:
+
+```python
+x = 2
+```
+
+and it will automatically know you're talking about some kind of integer. In C, it's slightly different because the C compiler wants to know exactly what datatype your variable is, so the same variable definition would be:
+
+```c
+int x = 2
+```
+
+The reason why there is a difference is actually quite important, but I'll defer that explanation to a later section.
+
 ## Functions
 Functions are nice and (mostly) simple, and you should use them as much as possible. There are a number of reasons to make liberal use of functions, including making your program faster, but we'll get into that later.
 
@@ -152,8 +181,4 @@ for i in range(100):
     print(3)
 ```
 
-to get the same effect. There's two kinds of loops in programming: **for** loops and **while** loops. If you want to run some code a certain number of times, use a **for** loop. If you want to to run some code until something happens, use a **while** loop. Don't worry about the code bit, again just remember the principle of a **for** loop vs a **while** loop.
-
-## Classes & Objects
-
-## Metaprogramming
+to get the same effect. There's two kinds of loops in programming: **for** loops and **while** loops. If you want to run some code a certain number of times, use a **for** loop. If you want to to run some code until something happens, use a **while** loop. Don't worry about every detail of the code examples, again, just remember the principle of a **for** loop vs a **while** loop.

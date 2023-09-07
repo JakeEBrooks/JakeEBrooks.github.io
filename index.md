@@ -8,6 +8,8 @@ layout: home
 {: .fs-10 .text-center}
 **Welcome!**
 
+This is intended to be a learning resource and introduction to programming written for people with no prior training in the fundamentals of computer science. This is unfortunately a common situation for undergraduate Physics students, who need to know how to write programs but generally are left on their own to learn how to do it.
+
 {: .fs-7 }
 **Important! Read before use!**
 

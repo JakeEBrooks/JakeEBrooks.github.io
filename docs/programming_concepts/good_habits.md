@@ -1,3 +1,0 @@
-variable naming
-modularity
-readable code
