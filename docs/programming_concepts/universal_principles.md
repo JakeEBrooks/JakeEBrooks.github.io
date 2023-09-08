@@ -59,15 +59,15 @@ So when you're writing a program, you're just typing words into any old text fil
 ## Data types
 *Might I suggest taking a break here? The next two sections are important, and rather lengthy... :)*
 
-Remember when we talked about ASCII [in the first section](../fundamental_concepts/binary_numbers#representing-information-with-binary-numbers), and how binary numbers are mapped to alphabetical letters? Well there's a similar thing for regular base-10 numbers, but it gets a bit more complicated for a couple of reasons.
+Remember when we talked about ASCII [in the first section](../fundamental_concepts/binary_numbers#representing-information-with-binary-numbers), and how binary numbers are mapped to alphabetical letters? There's a similar thing for mapping binary to regular base-10 numbers, but it gets a bit more complicated for a couple of reasons.
 
-Binary numbers of a fixed bitwidth (a fixed number of binary digits) have a maximum representable base-10 number. For example, the maximum number you can represent with a nibble is `1111 = 16`, so if you want to represent a bigger integer number than sixteen, you need more binary digits. Remember also that our big binary storage book (like a hard drive) can only hold a certain number of binary digits, therefore bigger base-10 numbers take up more storage space.
+Binary numbers of a fixed bitwidth (a fixed number of binary digits) have a maximum representable base-10 number. For example, the maximum number you can represent with a nibble is `1111` which is the number sixteen, so if you want to represent a bigger integer number than sixteen, you need more binary digits. Remember also that our big binary storage book (like a hard drive) can only hold a certain number of binary digits, therefore bigger base-10 numbers take up more storage space.
 
 Furthermore, for practical reasons, we need to be able to represent *any* ***real*** *number* in a computer. This gets tricky because this would also mean we need an infinite number of binary digits to represent some numbers. Take the well known irrational number $$\pi$$:
 
 $$\pi = 3.141592653589793.....$$
 
-How could you represent this number using binary? Without an infinite number of binary digits, you can't, just like how it takes an infinite number of normal digits to measure $$\pi$$ with 100% accuracy. This leads nicely into the idea of **data types**. A data type primarily answers two questions:
+How could you represent this number using binary? Without an infinite number of binary digits, **you can't**, just like how it takes an infinite number of normal digits to measure $$\pi$$ with 100% accuracy. This leads nicely into the idea of **data types**. A data type primarily answers two questions:
 
 - What is this collection of binary digits representing? An integer? A decimal value? A letter? An address?
 - How much storage space do you need to represent this value? A bit? A byte? A kilobyte?
@@ -84,7 +84,7 @@ Most other data types will be similar to these, or even use them in some way. De
 So we know that we can't (practically) use an infinite number of binary digits to represent numbers, which means we have to draw the line somewhere. Where we draw this line, or in other words, how many binary digits we allocate, is called the data type's **precision**. A data type that uses more binary digits will have a greater **precision** than a data type that uses less binary digits. How the data types are implemented varies from language to language, but I'll take you through two examples just to illustrate what goes on behind the scenes.
 
 #### Integers
-Integer data types come in two forms: **signed** and **unsigned**. A signed integer just means that it has a + or a - attached to it, so signed integers can be used to represent negative numbers. Each of these signed and unsigned variants will usually come in powers of two, most often up to 64 bits. Telling the computer you want to use a 64 bit unsigned integer, for example, means it will carve out 64 spaces for 64 binary digits, and this will allow you to store any integer value up to the number $$2^{64} = 18446744073709551616$$.
+Integer data types come in two forms: **signed** and **unsigned**. A signed integer just means that it has a + or a - attached to it, so signed integers can be used to represent negative numbers. Each of these signed and unsigned variants will usually come in powers of two, most often up to 64 bits. Telling the computer you want to use a 64 bit unsigned integer, for example, means it will carve out 64 spaces for 64 binary digits, and this will allow you to store any base-10 integer value up to the number $$2^{64} = 18,446,744,073,709,551,616$$.
 
 #### Floats
 Float precision is more tricky, and has been and probably always will be, one of the core problems in computer science. 
@@ -105,7 +105,7 @@ $$y = 20/7 = 2.8571428....$$
 
 If our float description, $$x$$, is fully accurate the following should be true:
 
-$$x/y = 1.0000000000$$
+$$x/y = 1.0$$
 
 but actually, in practice, it might evaluate to something like:
 
@@ -126,7 +126,7 @@ This means that all the restrictions we went through in the previous section on 
 *Ok we're done with this for now, take another break :)*
 
 ## Variables
-If you're already familiar with algebra, variables should be very easy to get to grips with because they're almost exactly the same as algebraic numbers. Variables are how you communicate values to your program. Most languages require you to label your variables with data types so it knows roughly what it is going to be working with when performing operations.
+If you're already familiar with algebra, variables should come quite naturally to you because they're almost exactly the same as algebraic numbers. Variables are how you communicate values to your program. Most languages require you to label your variables with data types so it knows roughly what it is going to be working with when performing operations.
 
 Python isn't one of these languages, so you can define variables quite simply:
 
@@ -134,18 +134,18 @@ Python isn't one of these languages, so you can define variables quite simply:
 x = 2
 ```
 
-and it will automatically know you're talking about some kind of integer. In C, it's slightly different because the C compiler wants to know exactly what datatype your variable is, so the same variable definition would be:
+and it will automatically know you're talking about some kind of integer. In C, it's slightly different because the C compiler wants to know exactly what datatype your variable is in advance, so the same variable definition would be:
 
 ```c
 int x = 2;
 ```
 
-The reason why there is a difference is actually quite important, but I'll defer that explanation to a later section.
+In both languages, anytime you type `x` the program will know you're actually talking about the integer number `2`.
 
 ## Functions
 Functions are nice and (mostly) simple, and you should use them as much as possible. There are a number of reasons to make liberal use of functions, including making your program faster, but we'll get into that later.
 
-Simply put, a function takes in *something*, and then performs a task using that *something*. The *something* it takes in can be anything, and it doesn't have to just be one thing; functions can take in as many *somethings* as you want them to. Say we want a function to add together *any* two integers. In python this would look something like:
+Simply put, a function takes in *something*, and then performs a task using that *something*. The *something* it takes in can be anything, and it doesn't have to just be one thing; functions can take in as many *somethings* as you want them to. Say we want a function to add together *any* two integers. In Python this would look something like:
 
 ```python
 def add(x, y):
@@ -157,7 +157,7 @@ In English, you can think of this as defining (```def```) a function called ```a
 ```c
 int add(int x, int y) {
     int sum = x + y;
-    return sum
+    return sum;
 }
 ```
 
