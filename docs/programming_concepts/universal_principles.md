@@ -67,7 +67,7 @@ Furthermore, for practical reasons, we need to be able to represent *any* ***rea
 
 $$\pi = 3.141592653589793.....$$
 
-How could you represent this number using binary? Without an infinite number of binary digits, **you can't**, just like how it takes an infinite number of normal digits to measure $$\pi$$ with 100% accuracy. This leads nicely into the idea of **data types**. A data type primarily answers two questions:
+How could you represent this number using binary? Without an infinite number of binary digits, **you can't**, just like how it takes an infinite number of normal digits to measure $$\pi$$ with 100% accuracy. This leads nicely into the idea of **data types**, which you can think of as a label for some collection of data. A data type primarily answers two questions:
 
 - What is this collection of binary digits representing? An integer? A decimal value? A letter? An address?
 - How much storage space do you need to represent this value? A bit? A byte? A kilobyte?
