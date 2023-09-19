@@ -9,14 +9,14 @@ nav_order: 2
 # Universal Principles
 There are some basic ideas that are common across all languages, so I thought I'd better go over these as they're often yet another thing that gets left out of introductory materials for programming. Again, they might seem simple, but having an explicit understanding can simplfy things in the long run. Where I can, I'll give concrete, intuitive, and simple examples using Python.
 
-## How do you actually write programs?
-Most often in just a simple text document. You install the necessary software for the programming language you're using, point it at the text file you created, and the software will read through the file assuming it contains code written in the language it understands. For example, if you wanted to write a Python program, you would start by creating a text file called "hello_world.py", where ".py" file extension just means: *this is a text file containing things written using Python syntax*. So inside the text file might just be:
+## How do you write programs?
+Most often in just a simple text document: a fancy ".txt" file. You install the necessary software for the programming language you're using, point it at the text file you created, and the software will read through the file assuming it contains code written in the language it understands. For example, if you wanted to write a Python program, you would start by creating a text file called "hello_world.py", where the ".py" file extension just means: _this is a text file containing things written using Python syntax_. So inside the text file might just be:
 
 ```python
 print("Hello World!")
 ```
 
-There's a number of ways to run the program, but the most basic way that you'll be using a lot early on is from the command line, by typing:
+There's a number of ways to actually run the program, but the most basic way that you'll be using a lot early on is from the command line, by typing:
 
 `python hello_world.py`
 
