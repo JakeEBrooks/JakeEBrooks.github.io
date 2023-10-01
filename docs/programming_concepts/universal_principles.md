@@ -163,6 +163,34 @@ int add(int x, int y) {
 
 Again, don't worry too much about every intricate detail of those examples. Just take away the principle of what functions do.
 
+## If Statements
+Sometimes in a program you might want some code to run _if and only if_ some kind of criteria are met. As an example, say you are writing some code to compute the square root of a number. This will have different behaviour above and below zero, so at some point you are going to want to direct your program to do different things depending on whether the input is greater or less than zero. If statements let you do this using [boolean logic](../fundamental_concepts/boolean_logic).
+
+Almost all If statements follow a similar three-tiered structure like the following Python:
+
+```python
+if condition1:
+    # If condition 1 evaluates to True, execute the code written here
+elif condition2:
+    # If condition 1 is False, but condition 2 is True, execute the code written here
+else:
+    # If none of the above conditions evaluate to True, execute the code written here
+```
+
+You can have as many `elif`s as you want, and the `else` is optional. The same code in C looks like:
+
+```c
+if (condition1) {
+    // If condition 1 evaluates to True, execute the code written here
+} else if (condition2) {
+    // If condition 1 is False, but condition 2 is True, execute the code written here
+} else {
+    // If none of the above conditions evaluate to True, execute the code written here
+}
+```
+
+The If, elif, else structure essentially translates in English to: "If _-this is true-_ execute _-this-_, otherwise If _-this is true-_ execute _-this-_, otherwise (and on and on until you run out of elif statements), otherwise _-do this-_"
+
 ## Loops
 Loops allow you execute the same code multiple times, or even continuously until some criteria is met within the program. For example, lets say I *really* like the number 3, and I want to write a python program to print 100 lines of the number 3. Instead of writing
 

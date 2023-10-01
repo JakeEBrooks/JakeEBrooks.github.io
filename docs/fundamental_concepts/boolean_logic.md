@@ -44,7 +44,7 @@ Like it says on the tin, the result of this operator is calculated by considerin
 So A and B must be **True** for the result to also be **True**.
 
 ## OR
-Yeah believe it or not there's a recurring theme here. The **OR** operator consider one thing **OR** another:
+Yeah believe it or not there's a recurring theme here. The **OR** operator considers one thing **OR** another:
 
 | A        | B        | Result        | 
 |:---------|:---------|:--------------|

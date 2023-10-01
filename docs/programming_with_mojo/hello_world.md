@@ -7,18 +7,17 @@ nav_order: 1
 ---
 
 # Hello World!
-It's a tradition when learning something new in programming to make the most basic program possible to make sure everything is working correctly. This is the "Hello World" program that just prints some text "Hello World!". So let's do that in Mojo. Open up a text file in your favourite text editor and type:
+It's a tradition when learning something new in programming to make the most basic program possible to make sure everything is working correctly. This is the "Hello World" program that just prints some text "Hello World!". So let's do that in Mojo. When writing Mojo in script form (as in, inside a text file) you need to tell the Mojo compiler what exactly you want to execute. This is the purpose of the `main` function. So to write our first program, simply write in a text file:
 ```python
-print("Hello World!")
+fn main():
+    print("Hello World!")
 ```
 
-Then save that text file in the local directory as "hello_world.mojo", or if you're feeling adventurous save it as "hello_world.&#128293;". Now to run the program type at the command line:
+Then save that text file in the local directory as "hello_world.mojo". Now to run the program type at the command line:
 
-> mojo hello_world.mojo
-
-or
-
-> mojo hello_world.&#128293;
+```
+mojo hello_world.mojo
+```
 
 If all is well, you should get back some text:
 
